@@ -1,5 +1,8 @@
 package com.capgemini;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -14,6 +17,9 @@ import java.util.regex.Pattern;
  @jocsas
 
 */
+
+@Data
+@AllArgsConstructor
 
 public class ChallengeTwo {
     public static void main(String[] args) {

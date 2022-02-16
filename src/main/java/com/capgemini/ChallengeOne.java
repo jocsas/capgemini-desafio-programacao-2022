@@ -2,13 +2,14 @@ package com.capgemini;
 
 import java.util.Scanner;
 
-/**                                            # Questão 01
-
-   Escreva um algoritmo que mostre na tela uma escada de tamanho n utilizando o caractere * e espaços.
-   A base e altura da escada devem ser iguais ao valor de n. A última linha não deve conter nenhum espaço.
-
- @jocsas
-*/
+/**
+ * # Questão 01
+ * <p>
+ * Escreva um algoritmo que mostre na tela uma escada de tamanho n utilizando o caractere * e espaços.
+ * A base e altura da escada devem ser iguais ao valor de n. A última linha não deve conter nenhum espaço.
+ *
+ * @jocsas
+ */
 
 public class ChallengeOne {
     public static void main(String[] args) {
@@ -17,6 +18,13 @@ public class ChallengeOne {
         System.out.println("Digite um número: ");
 
         int num = scan.nextInt();
+
+        String stair = String.valueOf(buildStair(num));
+
+        System.out.println(stair);
+    }
+
+    public static StringBuilder buildStair(int num) {
 
         StringBuilder degree = new StringBuilder();
 
@@ -31,8 +39,7 @@ public class ChallengeOne {
                 degree.append("\n");
             }
         }
-        String stair = String.valueOf(degree);
-
-        System.out.println(stair);
+        return degree;
     }
+
 }

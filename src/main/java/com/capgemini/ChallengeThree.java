@@ -4,9 +4,9 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 /**                                                         Questão #3
-             Duas palavras podem ser consideradas anagramas de si mesmas
-             se as letras de uma palavra podem ser realocadas para formar a outra palavra.
-             Dada uma string qualquer, desenvolva um algoritmo que encontre o número de pares de substrings que são anagramas.
+ Duas palavras podem ser consideradas anagramas de si mesmas
+ se as letras de uma palavra podem ser realocadas para formar a outra palavra.
+ Dada uma string qualquer, desenvolva um algoritmo que encontre o número de pares de substrings que são anagramas.
  @jocsas
  */
 
@@ -16,15 +16,21 @@ import java.util.Scanner;
 
 public class ChallengeThree {
     public static void main(String[] args) {
-        int strSz;
-        String str = "", temp = "";
+        String str = "";
 
         System.out.println("Digite uma palavra: ");
         Scanner scan = new Scanner(System.in);
 
         str = scan.next();
-        strSz = str.length();
 
+        int result = getAnagrams(str);
+
+        System.out.println(result);
+    }
+
+    public static int getAnagrams(String str) {
+        String temp = "";
+        int strSz = str.length();
         int p = 0, anagramsCount = 0;
         int z = (strSz * strSz) - (((strSz * strSz) - strSz) / 2);
         String[] position = new String[z];
@@ -48,7 +54,9 @@ public class ChallengeThree {
                 }
             }
         }
-        System.out.println(anagramsCount);
+        return anagramsCount;
 
     }
-}
+    }
+
+
