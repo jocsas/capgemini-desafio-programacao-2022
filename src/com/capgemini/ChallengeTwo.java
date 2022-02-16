@@ -2,6 +2,15 @@ package com.capgemini;
 
 import java.util.Scanner;
 
+
+/*                                          Questão #2
+
+    Débora digitou uma string aleatória no campo de senha, porém ela não tem certeza se é uma senha forte.
+    Para ajudar Débora, construa um algoritmo que informe qual é o número mínimo de caracteres que
+    devem ser adicionados para uma string qualquer ser considerada segura.
+
+*/
+
 public class ChallengeTwo {
     public static void main(String[] args) {
 
