@@ -3,6 +3,17 @@ package com.capgemini;
 import java.util.Arrays;
 import java.util.Scanner;
 
+/**                                                         Questão #3
+             Duas palavras podem ser consideradas anagramas de si mesmas
+             se as letras de uma palavra podem ser realocadas para formar a outra palavra.
+             Dada uma string qualquer, desenvolva um algoritmo que encontre o número de pares de substrings que são anagramas.
+ @jocsas
+ */
+
+/** Correção A lista de todos os anagramas pares são:
+ * [o, o], [ov, vo] que estão nas posições [[0, 2]] (anagrama 1) , [[0, 1], [1, 2]] (anagrama 2) respectivamente.  */
+
+
 public class ChallengeThree {
     public static void main(String[] args) {
         int strSz;
